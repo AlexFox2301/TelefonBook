@@ -14,7 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("Телефонная книга");
         primaryStage.setMinHeight(400);
         primaryStage.setMinWidth(400);
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 400, 400));
         primaryStage.show();
     }
 
