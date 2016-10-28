@@ -2,16 +2,20 @@ package object;
 
 public class Person {
 
-    private String flo;
+    private String fio;
     private String phone;
 
-
-    public String getFlo() {
-        return flo;
+    public Person(String fio, String phone) {
+        this.fio = fio;
+        this.phone = phone;
     }
 
-    public void setFlo(String flo) {
-        this.flo = flo;
+    public String getFio() {
+        return fio;
+    }
+
+    public void setFio(String fio) {
+        this.fio = fio;
     }
 
     public String getPhone() {

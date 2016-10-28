@@ -24,21 +24,10 @@ public class Main extends Application {
 
     private void testData() {
         CollectionAdresBook adresBook = new CollectionAdresBook();
+        adresBook.fillTestData();
+        adresBook.print();
 
-        Person person = new Person();
-        person.setFlo("Test1");
-        person.setPhone("123456789");
 
-        Person person2 = new Person();
-        person2.setFlo("Test 2");
-        person2.setPhone("987654");
-
-        adresBook.add(person);
-        adresBook.add(person2);
-
-        person.setPhone("1111111");
-
-        adresBook.delete(person);
     }
 
 
