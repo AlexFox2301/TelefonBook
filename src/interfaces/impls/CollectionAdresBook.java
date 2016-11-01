@@ -5,8 +5,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import object.Person;
 
-import java.util.ArrayList;
-
 public class CollectionAdresBook implements AdresBook {
 
     private ObservableList<Person> personList = FXCollections.observableArrayList();
@@ -38,7 +36,7 @@ public class CollectionAdresBook implements AdresBook {
         personList.add(new Person("Роман Романов", "56561654946"));
         personList.add(new Person("Антон Иванов", "6355132654"));
         personList.add(new Person("Джон Маклейн", "5465464454654"));
-        personList.add(new Person("ДЖек Воробей", "897985+6161254"));
+        personList.add(new Person("ДЖек Воробей", "8979856161254"));
         personList.add(new Person("Алиса Иванова", "321326546849"));
         personList.add(new Person("Боб Свегер", "321635468798654"));
     }

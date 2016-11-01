@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="120.0" maxWidth="500.0" minHeight="120.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlls.EditController">
+<BorderPane maxHeight="120.0" maxWidth="500.0" minHeight="120.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlls.EditDialogController">
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -28,12 +28,12 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="txtName">
+            <TextField fx:id="txtFio">
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
                </VBox.margin>
             </TextField>
-            <TextArea fx:id="txtNumber" prefHeight="31.0" prefWidth="200.0">
+            <TextArea fx:id="textPhone" prefHeight="31.0" prefWidth="200.0">
                <VBox.margin>
                   <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
@@ -49,7 +49,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="btnCansle" mnemonicParsing="false" prefWidth="75.0" text="Отмена">
+            <Button fx:id="btnCansle" cancelButton="true" mnemonicParsing="false" onAction="#actionClose" prefWidth="75.0" text="Отмена">
                <VBox.margin>
                   <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>

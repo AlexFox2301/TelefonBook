@@ -1,28 +1,38 @@
 package object;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class Person {
 
-    private String fio;
-    private String phone;
+    private SimpleStringProperty fio = new SimpleStringProperty("");
+    private SimpleStringProperty phone = new SimpleStringProperty("");
+
+    public Person() {
+    }
 
     public Person(String fio, String phone) {
-        this.fio = fio;
-        this.phone = phone;
+        this.fio = new SimpleStringProperty(fio);
+        this.phone = new SimpleStringProperty(phone);
+
     }
 
-    public String getFio() {
-        return fio;
-    }
+    public String getFio() {return fio.get();}
 
-    public void setFio(String fio) {
-        this.fio = fio;
-    }
+    public void setFio(String fio) {this.fio.set(fio);}
 
-    public String getPhone() {
-        return phone;
-    }
+    public String getPhone() {return phone.get();}
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhone(String phone) {this.phone.setValue(phone);}
+
+    public SimpleStringProperty fioProperty(){return fio;}
+
+    public SimpleStringProperty phoneProperty(){return phone;}
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "fio='" + fio + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }
